@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OverClean PC — Limpieza, mantenimiento y optimización de computadoras en CABA</title>
+  <meta name="description" content="Emprendimiento local en CABA: limpieza, mantenimiento y optimización de PC. Reservá por WhatsApp o Instagram. Más velocidad, más vida útil.">
+  <link rel="canonical" href="https://overcleanpc.example/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OverClean PC — Limpieza y mantenimiento de computadoras en CABA">
+  <meta property="og:description" content="Emprendimiento local en CABA. Limpieza, mantenimiento y optimización de PC. Reservá por WhatsApp o Instagram.">
+  <meta property="og:url" content="https://www.instagram.com/overclean.pc/">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=OverClean+PC">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OverClean PC — Limpieza y mantenimiento de computadoras en CABA">
+  <meta name="twitter:description" content="Limpieza, mantenimiento y optimización de PC en CABA. Reservá por WhatsApp o Instagram.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=OverClean+PC">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Ctext y='0.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD LocalBusiness and Service -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"OverClean PC",
+    "url":"https://www.instagram.com/overclean.pc/",
+    "telephone":"+543548437924",
+    "image":"https://via.placeholder.com/500x500.png?text=OverClean+PC+Logo",
+    "description":"Emprendimiento local de CABA dedicado a la limpieza, mantenimiento y optimización de PC.",
+    "areaServed":"CABA, Buenos Aires, Argentina",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"CABA",
+      "addressRegion":"Buenos Aires",
+      "addressCountry":"AR"
+    },
+    "sameAs":["https://www.instagram.com/overclean.pc/"],
+    "makesOffer":[
+      {
+        "@type":"Offer",
+        "itemOffered":{
+          "@type":"Service",
+          "name":"Limpieza y mantenimiento de PC"
+        }
+      },
+      {
+        "@type":"Offer",
+        "itemOffered":{
+          "@type":"Service",
+          "name":"Armado, desarme y optimización de PC"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --color-primary:#0A2E5D;
+      --color-secondary:#00BFFF;
+      --color-white:#FFFFFF;
+      --color-light-gray:#D9D9D9;
+      --font-montserrat:'Montserrat',sans-serif;
+      --font-roboto:'Roboto',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--font-roboto);
+      color:var(--color-white);
+      line-height:1.6;
+      background:linear-gradient(180deg,var(--color-primary) 0%,var(--color-secondary) 100%);
+      min-height:100vh;
+    }
+    a{color:var(--color-secondary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:0 auto;padding:1.25rem}
+    h1,h2,h3{font-family:var(--font-montserrat);color:var(--color-white);line-height:1.2;margin-bottom:.7rem}
+
+    /* Header/Nav */
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(10,46,93,0.7);z-index:20;border-bottom:1px solid rgba(255,255,255,.12)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.25rem}
+    .brand{display:flex;align-items:center;gap:.6rem}
+    .brand svg{width:28px;height:28px;fill:var(--color-white)}
+    .brand span{font-family:var(--font-montserrat);font-weight:700}
+    .menu{display:flex;gap:1rem}
+    .menu a{font-weight:500}
+    .menu a:hover{text-decoration:none;opacity:.9}
+
+    /* Pattern */
+    body::before{
+      content:'';position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.14;
+      background-image:url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='1' fill='%23FFFFFF' fill-opacity='0.35'/%3E%3Cpath d='M0 9h18M9 0v18' stroke='%23FFFFFF' stroke-opacity='0.18' stroke-width='0.5'/%3E%3C/svg%3E");
+      background-size:160px 160px;transform:rotate(28deg) scale(1.8);transform-origin:center;
+    }
+
+    /* Hero */
+    #hero{display:grid;grid-template-columns:1fr;gap:1.2rem;align-items:center;min-height:78vh;padding:3.2rem 1.25rem}
+    #hero p{max-width:640px}
+    .cta-row{display:flex;flex-direction:column;gap:12px;margin-top:1.2rem;max-width:360px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.4rem;border-radius:999px;font-weight:700;border:none;cursor:pointer;transition:.2s}
+    .btn-primary{background:var(--color-secondary);color:var(--color-primary)}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-outline{background:transparent;color:var(--color-white);border:2px solid var(--color-white)}
+    .btn-outline:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+    .hero-art{max-width:420px;justify-self:center}
+    .hero-art svg{width:100%;height:auto;filter:drop-shadow(0 10px 20px rgba(0,0,0,.25))}
+
+    .section{padding:3.2rem 1.25rem}
+    .section.alt{background:rgba(0,0,0,.18)}
+
+    .grid{display:grid;gap:1rem}
+    .cards-3{grid-template-columns:1fr}
+    .cards-4{grid-template-columns:1fr}
+
+    .card{background:rgba(255,255,255,.1);border-radius:12px;padding:1.25rem;transition:transform .2s, background .2s}
+    .card:hover{transform:translateY(-3px);background:rgba(255,255,255,.16)}
+    .card .icon{width:46px;height:46px;fill:var(--color-secondary);margin-bottom:.6rem}
+
+    .section-title{font-size:2rem;text-align:center;margin-bottom:1.1rem;position:relative;padding-bottom:.5rem}
+    .section-title::after{content:'';position:absolute;left:50%;transform:translateX(-50%);bottom:0;width:64px;height:3px;background:var(--color-secondary);border-radius:2px}
+
+    /* Steps */
+    .steps{counter-reset:step}
+    .step{position:relative;padding-top:2.8rem}
+    .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--color-secondary);color:var(--color-primary);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid var(--color-white)}
+
+    /* Gallery */
+    .pair{display:flex;flex-direction:column;gap:.8rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:10px}
+    .pair .wrap{position:relative;border-radius:8px;overflow:hidden}
+    .pair img{width:100%;display:block;border-radius:8px}
+    .label{position:absolute;top:10px;left:10px;background:var(--color-primary);padding:.3rem .6rem;border-radius:6px;font-size:.88rem}
+
+    /* Pricing */
+    .price-card h3{color:var(--color-secondary)}
+    .price-card ul{list-style:none;margin:.6rem 0 1.4rem;padding:0}
+    .price-card li{display:flex;gap:.5rem;margin:.4rem 0;color:var(--color-light-gray)}
+    .price-card li svg{width:18px;height:18px;fill:var(--color-secondary);flex-shrink:0}
+
+    /* FAQ */
+    .faq{max-width:900px;margin:1.2rem auto 0}
+    .faq-item{background:rgba(255,255,255,.08);border-radius:10px;margin-bottom:.8rem;overflow:hidden}
+    .faq-q{width:100%;text-align:left;padding:1rem 1.25rem;background:rgba(255,255,255,.05);border:0;color:var(--color-white);font-weight:600;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease;color:var(--color-light-gray);padding:0 1.25rem}
+    .faq-a.open{max-height:220px;padding:1rem 1.25rem}
+
+    /* Testimonials */
+    .testimonial{background:rgba(255,255,255,.1);border-radius:12px;padding:1rem;font-style:italic}
+
+    /* Footer */
+    footer{background:var(--color-primary);border-top:1px solid rgba(255,255,255,.12);text-align:center;padding:2rem 1.25rem}
+    .social{display:flex;justify-content:center;gap:1rem;margin-top:.6rem}
+    .social a svg{width:22px;height:22px;fill:var(--color-light-gray)}
+    .social a:hover svg{fill:var(--color-secondary)}
+
+    /* Floating WhatsApp */
+    .fab-wa{position:fixed;right:14px;bottom:14px;background:#25D366;color:#003e1f;border-radius:999px;padding:.9rem 1rem;display:flex;gap:.5rem;align-items:center;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:30}
+    .fab-wa:hover{filter:brightness(0.95);text-decoration:none}
+
+    /* Responsive */
+    @media (min-width:768px){
+      .container{padding:1.75rem}
+      #hero{grid-template-columns:1.1fr .9fr;gap:2rem;min-height:80vh}
+      .cards-3{grid-template-columns:repeat(3,1fr)}
+      .cards-4{grid-template-columns:repeat(4,1fr)}
+      .grid-2{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (min-width:1024px){
+      .section-title{font-size:2.4rem}
+    }
+  </style>
+</head>
+<body>
+  <a class="fab-wa" href="https://wa.me/543548437924?text=Hola%20OverClean%20PC!%20Quiero%20reservar%20un%20turno%20para%20mi%20PC." target="_blank" rel="noopener" aria-label="Reservar por WhatsApp (flotante)">
+    <!-- WA icon -->
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.52 0 .25 5.27.25 11.8c0 2.08.54 4.12 1.58 5.92L0 24l6.43-1.77a11.76 11.76 0 0 0 5.63 1.44h.01c6.54 0 11.81-5.27 11.81-11.81 0-3.16-1.23-6.13-3.36-8.38Z"/></svg>
+    WhatsApp
+  </a>
+
+  <header>
+    <nav class="nav container" aria-label="Principal">
+      <a href="#" class="brand" aria-label="Inicio OverClean PC">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3z"/><path d="M2 18h20v2H2z"/></svg>
+        <span>OverClean PC</span>
+      </a>
+      <div class="menu" role="menubar">
+        <a href="#services" role="menuitem">Servicios</a>
+        <a href="#why" role="menuitem">Beneficios</a>
+        <a href="#process" role="menuitem">Proceso</a>
+        <a href="#galeria" role="menuitem">Antes/Después</a>
+        <a href="#contacto" role="menuitem">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="container" role="region" aria-labelledby="ttl-hero">
+      <div>
+        <h1 id="ttl-hero">Dale nueva vida a tu computadora</h1>
+        <p>Limpieza, mantenimiento y optimización en CABA. Emprendimiento local con atención personalizada.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/543548437924?text=Hola%20OverClean%20PC!%20Vengo%20desde%20la%20web%20y%20quiero%20reservar%20un%20turno." target="_blank" rel="noopener">
+            Reservar por WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.instagram.com/overclean.pc/" target="_blank" rel="noopener">
+            Escribinos por Instagram
+          </a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de PC">
+          <rect x="20" y="20" width="280" height="160" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)"/>
+          <rect x="40" y="40" width="240" height="120" rx="8" fill="rgba(255,255,255,0.12)"/>
+          <rect x="110" y="190" width="100" height="10" rx="5" fill="rgba(255,255,255,0.25)"/>
+          <circle cx="270" cy="34" r="4" fill="rgba(255,255,255,0.5)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section alt" aria-labelledby="ttl-about">
+      <div class="container">
+        <h2 id="ttl-about" class="section-title">¿Quiénes somos?</h2>
+        <p>Somos <strong>OverClean PC</strong>, un <strong>emprendimiento local</strong> creado por jóvenes apasionados por la tecnología. Nuestro foco es que tu PC rinda al máximo con un servicio cercano, claro y de confianza.</p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="section" aria-labelledby="ttl-servicios">
+      <div class="container">
+        <h2 id="ttl-servicios" class="section-title">¿Qué hacemos?</h2>
+        <div class="grid cards-3" role="list">
+          <article class="card" role="listitem">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M2 18h20v2H2z"/></svg>
+            <h3>Limpieza y mantenimiento</h3>
+            <p>Servicio profundo y preventivo para prolongar la vida útil.</p>
+          </article>
+          <article class="card" role="listitem">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M3 13h18v2H3z"/><path d="M7 7h10v2H7z"/></svg>
+            <h3>Armado, desarme y optimización</h3>
+            <p>Mejoramos el rendimiento y ajustamos tu equipo.</p>
+          </article>
+          <article class="card" role="listitem">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 7h8v2H8zM8 11h8v2H8zM8 15h8v2H8z"/></svg>
+            <h3>Backup y recuperación</h3>
+            <p>Resguardo de datos y recuperación básica cuando haga falta.</p>
+          </article>
+          <article class="card" role="listitem">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+            <h3>Cambio de pasta térmica</h3>
+            <p>Temperaturas más estables y mayor rendimiento.</p>
+          </article>
+          <article class="card" role="listitem">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v10H4z"/><path d="M2 18h20v2H2z"/></svg>
+            <h3>Periféricos e internet</h3>
+            <p>Configuración de impresoras, monitores, routers y más.</p>
+          </article>
+          <article class="card" role="listitem">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l4 8-4 12-4-12 4-8z"/></svg>
+            <h3>Asesoramiento en upgrades</h3>
+            <p>Te ayudamos a elegir las mejores mejoras para tu PC.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="why" class="section alt" aria-labelledby="ttl-why">
+      <div class="container">
+        <h2 id="ttl-why" class="section-title">¿Por qué elegirnos?</h2>
+        <div class="grid cards-4">
+          <div class="card"><h3>Transparencia</h3><p>Comunicación clara en cada paso del servicio.</p></div>
+          <div class="card"><h3>Atención personalizada</h3><p>Tratamos cada equipo como si fuera nuestro.</p></div>
+          <div class="card"><h3>Entregas a tiempo</h3><p>Compromiso con los plazos acordados.</p></div>
+          <div class="card"><h3>Rendimiento real</h3><p>Medimos mejoras y te damos consejos de cuidado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="process" class="section" aria-labelledby="ttl-proceso">
+      <div class="container">
+        <h2 id="ttl-proceso" class="section-title">¿Cómo trabajamos?</h2>
+        <div class="grid grid-2 steps">
+          <div class="card step"><h3>Contacto</h3><p>WhatsApp o Instagram para coordinar.</p></div>
+          <div class="card step"><h3>Diagnóstico</h3><p>Revisamos el estado y definimos el servicio.</p></div>
+          <div class="card step"><h3>Servicio</h3><p>Limpieza, mantenimiento u optimización.</p></div>
+          <div class="card step"><h3>Entrega y consejos</h3><p>PC lista + recomendaciones para el día a día.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería Antes/Después -->
+    <section id="galeria" class="section alt" aria-labelledby="ttl-galeria">
+      <div class="container">
+        <h2 id="ttl-galeria" class="section-title">Antes y después</h2>
+        <div class="grid grid-2">
+          <div class="pair">
+            <div class="wrap">
+              <img src="https://via.placeholder.com/640x380?text=Antes" alt="Equipo antes del servicio" loading="lazy" width="640" height="380">
+              <span class="label">Antes</span>
+            </div>
+            <div class="wrap">
+              <img src="https://via.placeholder.com/640x380?text=Después" alt="Equipo después del servicio" loading="lazy" width="640" height="380">
+              <span class="label">Después</span>
+            </div>
+          </div>
+          <div class="pair">
+            <div class="wrap">
+              <img src="https://via.placeholder.com/640x380?text=Antes" alt="Equipo antes del servicio" loading="lazy" width="640" height="380">
+              <span class="label">Antes</span>
+            </div>
+            <div class="wrap">
+              <img src="https://via.placeholder.com/640x380?text=Después" alt="Equipo después del servicio" loading="lazy" width="640" height="380">
+              <span class="label">Después</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paquetes -->
+    <section id="precios" class="section" aria-labelledby="ttl-precios">
+      <div class="container">
+        <h2 id="ttl-precios" class="section-title">Paquetes</h2>
+        <div class="grid cards-3">
+          <article class="card price-card">
+            <h3>Básico</h3>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                Limpieza externa e interna
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/543548437924?text=Hola!%20Quiero%20el%20paquete%20B%C3%A1sico%20de%20OverClean%20PC." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+          </article>
+          <article class="card price-card">
+            <h3>Full</h3>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>Limpieza + optimización</li>
+              <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>Cambio de pasta térmica</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/543548437924?text=Hola!%20Quiero%20el%20paquete%20Full%20de%20OverClean%20PC." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+          </article>
+          <article class="card price-card">
+            <h3>Pro</h3>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>Full + backup básico</li>
+              <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>Asesoramiento en upgrades</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/543548437924?text=Hola!%20Quiero%20el%20paquete%20Pro%20de%20OverClean%20PC." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+          </article>
+        </div>
+        <p style="opacity:.85;margin-top:1rem;text-align:center">* Escribinos por precios y disponibilidad.</p>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section alt" aria-labelledby="ttl-testimonios">
+      <div class="container">
+        <h2 id="ttl-testimonios" class="section-title">Opiniones</h2>
+        <div class="grid grid-2">
+          <blockquote class="testimonial">“Me dejaron la PC como nueva. Atención de 10.” — <strong>Camila</strong></blockquote>
+          <blockquote class="testimonial">“Rápidos, claros y muy buena onda. Recomendado.” — <strong>Lautaro</strong></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section" aria-labelledby="ttl-faq">
+      <div class="container">
+        <h2 id="ttl-faq" class="section-title">Preguntas frecuentes</h2>
+        <div class="faq" id="accordion">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Cuánto tarda el servicio?<span>▼</span></button>
+            <div class="faq-a" aria-hidden="true"><p>Entre 2 y 24 horas, según el estado del equipo y el paquete.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Qué incluye la limpieza?<span>▼</span></button>
+            <div class="faq-a" aria-hidden="true"><p>Limpieza interna/externa, retiro de polvo, revisión visual y pruebas básicas.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Retiran y entregan equipos?<span>▼</span></button>
+            <div class="faq-a" aria-hidden="true"><p>Coordinamos según la zona de CABA. Consultanos por DM/WhatsApp.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Formas de pago?<span>▼</span></button>
+            <div class="faq-a" aria-hidden="true"><p>Efectivo y transferencia. Consultá por otras opciones.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section" aria-labelledby="ttl-contacto">
+      <div class="container" style="text-align:center">
+        <h2 id="ttl-contacto" class="section-title">Contacto</h2>
+        <p>¿Listo para mejorar tu PC? Escribinos:</p>
+        <div style="display:flex;gap:12px;justify-content:center;margin:1rem 0;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://wa.me/543548437924?text=Hola%20OverClean%20PC!%20Quiero%20reservar%20un%20turno." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/overclean.pc/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p>Tel: <strong>+54 3548 437924</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> OverClean PC — Emprendimiento local en CABA</div>
+    <div class="social" aria-label="Redes sociales">
+      <a href="https://www.instagram.com/overclean.pc/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm12 1.5a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+      </a>
+      <a href="https://wa.me/543548437924" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.52 0 .25 5.27.25 11.8c0 2.08.54 4.12 1.58 5.92L0 24l6.43-1.77a11.76 11.76 0 0 0 5.63 1.44h.01c6.54 0 11.81-5.27 11.81-11.81 0-3.16-1.23-6.13-3.36-8.38Z"/></svg>
+      </a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <svg viewBox="0 0 24 24"><path d="M4 4h4l4 6 6-6h2l-7 7 7 9h-4l-5-7-7 7H2l8-8z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FAQ simple
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const ans = item.querySelector('.faq-a');
+        const open = ans.classList.contains('open');
+        document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+        if (!open) ans.classList.add('open');
+        btn.setAttribute('aria-expanded', String(!open));
+        ans.setAttribute('aria-hidden', String(open));
+      });
+    });
+  </script>
+</body>
+</html>
