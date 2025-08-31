@@ -1,0 +1,122 @@
+:root{
+  --color-primary:#0A2E5D;
+  --color-secondary:#00BFFF;
+  --color-white:#FFFFFF;
+  --color-light-gray:#D9D9D9;
+  --font-montserrat:'Montserrat',sans-serif;
+  --font-roboto:'Roboto',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-roboto);
+  color:var(--color-white);
+  line-height:1.6;
+  background:linear-gradient(180deg,var(--color-primary) 0%,var(--color-secondary) 100%);
+  min-height:100vh;
+}
+a{color:var(--color-secondary);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1200px;margin:0 auto;padding:1.25rem}
+h1,h2,h3{font-family:var(--font-montserrat);color:var(--color-white);line-height:1.2;margin-bottom:.7rem}
+
+/* Header/Nav */
+header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(10,46,93,0.7);z-index:20;border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.25rem}
+.brand{display:flex;align-items:center;gap:.6rem}
+.brand svg{width:28px;height:28px;fill:var(--color-white)}
+.brand span{font-family:var(--font-montserrat);font-weight:700}
+.menu{display:flex;gap:1rem}
+.menu a{font-weight:500}
+.menu a:hover{text-decoration:none;opacity:.9}
+
+/* Pattern */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.14;
+  background-image:url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='1' fill='%23FFFFFF' fill-opacity='0.35'/%3E%3Cpath d='M0 9h18M9 0v18' stroke='%23FFFFFF' stroke-opacity='0.18' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-size:160px 160px;transform:rotate(28deg) scale(1.8);transform-origin:center;
+}
+
+/* Hero */
+#hero{display:grid;grid-template-columns:1fr;gap:1.2rem;align-items:center;min-height:78vh;padding:3.2rem 1.25rem}
+#hero p{max-width:640px}
+.cta-row{display:flex;flex-direction:column;gap:12px;margin-top:1.2rem;max-width:360px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.4rem;border-radius:999px;font-weight:700;border:none;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--color-secondary);color:var(--color-primary)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--color-white);border:2px solid var(--color-white)}
+.btn-outline:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.hero-art{max-width:420px;justify-self:center}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 10px 20px rgba(0,0,0,.25))}
+
+.section{padding:3.2rem 1.25rem}
+.section.alt{background:rgba(0,0,0,.18)}
+
+.grid{display:grid;gap:1rem}
+.cards-3{grid-template-columns:1fr}
+.cards-4{grid-template-columns:1fr}
+
+.card{background:rgba(255,255,255,.1);border-radius:12px;padding:1.25rem;transition:transform .2s, background .2s}
+.card:hover{transform:translateY(-3px);background:rgba(255,255,255,.16)}
+.card .icon{width:46px;height:46px;fill:var(--color-secondary);margin-bottom:.6rem}
+
+.section-title{font-size:2rem;text-align:center;margin-bottom:1.1rem;position:relative;padding-bottom:.5rem}
+.section-title::after{content:'';position:absolute;left:50%;transform:translateX(-50%);bottom:0;width:64px;height:3px;background:var(--color-secondary);border-radius:2px}
+
+/* Steps */
+.steps{counter-reset:step}
+.step{position:relative;padding-top:2.8rem}
+.step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--color-secondary);color:var(--color-primary);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid var(--color-white)}
+
+/* Gallery */
+.pair{display:flex;flex-direction:column;gap:.8rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:10px}
+.pair .wrap{position:relative;border-radius:8px;overflow:hidden}
+.pair img{width:100%;display:block;border-radius:8px}
+.label{position:absolute;top:10px;left:10px;background:var(--color-primary);padding:.3rem .6rem;border-radius:6px;font-size:.88rem}
+
+/* Pricing */
+.price-card h3{color:var(--color-secondary)}
+.price-card ul{list-style:none;margin:.6rem 0 1.4rem;padding:0}
+.price-card li{display:flex;gap:.5rem;margin:.4rem 0;color:var(--color-light-gray)}
+.price-card li svg{width:18px;height:18px;fill:var(--color-secondary);flex-shrink:0}
+
+/* FAQ */
+.faq{max-width:900px;margin:1.2rem auto 0}
+.faq-item{background:rgba(255,255,255,.08);border-radius:10px;margin-bottom:.8rem;overflow:hidden}
+.faq-q{width:100%;text-align:left;padding:1rem 1.25rem;background:rgba(255,255,255,.05);border:0;color:var(--color-white);font-weight:600;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease;color:var(--color-light-gray);padding:0 1.25rem}
+.faq-a.open{max-height:220px;padding:1rem 1.25rem}
+
+/* Testimonials */
+.testimonial{background:rgba(255,255,255,.1);border-radius:12px;padding:1rem;font-style:italic}
+
+/* Carousel */
+.carousel { text-align: center; }
+.carousel-controls { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1rem; }
+.indicators { display: flex; gap: 0.5rem; }
+.indicator { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.3); border: none; cursor: pointer; }
+.indicator.active { background: var(--color-secondary); }
+.carousel-controls button { background: var(--color-secondary); color: var(--color-primary); border: none; padding: 0.5rem; border-radius: 50%; cursor: pointer; font-size: 1.2rem; }
+.carousel-controls button:hover { background: rgba(0,191,255,0.8); }
+
+/* Footer */
+footer{background:var(--color-primary);border-top:1px solid rgba(255,255,255,.12);text-align:center;padding:2rem 1.25rem}
+.social{display:flex;justify-content:center;gap:1rem;margin-top:.6rem}
+.social a svg{width:22px;height:22px;fill:var(--color-light-gray)}
+.social a:hover svg{fill:var(--color-secondary)}
+
+/* Floating WhatsApp */
+.fab-wa{position:fixed;right:14px;bottom:14px;background:#25D366;color:#003e1f;border-radius:999px;padding:.9rem 1rem;display:flex;gap:.5rem;align-items:center;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:30}
+.fab-wa:hover{filter:brightness(0.95);text-decoration:none}
+
+/* Responsive */
+@media (min-width:768px){
+  .container{padding:1.75rem}
+  #hero{grid-template-columns:1.1fr .9fr;gap:2rem;min-height:80vh}
+  .cards-3{grid-template-columns:repeat(3,1fr)}
+  .cards-4{grid-template-columns:repeat(4,1fr)}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:1024px){
+  .section-title{font-size:2.4rem}
+}
